@@ -1,0 +1,269 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: #30333A; /* Основной светлый фон */
+  color: #e0e0e0; /* Контрастный текст */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Контейнер для ограничения ширины контента */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Ограничиваем ширину */
+  margin: 0 auto; /* Центрируем */
+  padding: 0 20px; /* Внутренние отступы для пустого пространства */
+}
+
+/* Стили для верхнего блока */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #30333A; /* Светлый фон */
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.logo {
+  
+  width: 150px;
+  height: 150px;
+  background-image: url("images/logo.png"); 
+  /* Временная заглушка для логотипа */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.restaurant-info {
+  
+  max-width: 600px;
+  padding: 20px;
+}
+
+.restaurant-info h1 {
+  
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.restaurant-info p {
+  background-color: #72676F; /* Зеленый фон для текстовых блоков */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color:#e0e0e0;
+}
+
+.stats {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  background-color: #30333A; /* Нежно-голубой фон */
+  border-top: 2px solid #e0e0e0;
+  border-bottom: 4px solid #e0e0e0;
+}
+
+.stat-item {
+  background-color: #72676F; /* Зеленый фон для текстовых блоков */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.stat-item h2 {
+  
+  font-size: 36px;
+  color:#e0e0e0;
+}
+
+.stat-item p {
+  
+  font-size: 16px;
+  color: #e0e0e0;
+}
+
+
+/* Блок основной информации */
+/* Основной блок */
+.main-info {
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  gap: 20px;
+}
+
+/* Контейнер для большого фото и текстовой колонки */
+/* Контейнер для большого фото и текста справа */
+.photo-and-text {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.large-photo img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Эффект увеличения */
+}
+
+.large-photo img:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.text-column {
+  
+  background-color: #72676F; /* Зеленый фон для текстовых блоков */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #72676F;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text-column h3 {
+  
+  background-color: #9A8D96; /* Зеленый фон для текстовых блоков */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+.h4 {
+  background-color: #9A8D96; /* Зеленый фон для текстовых блоков */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.text-column p {
+  
+  margin-bottom: 10px;
+}
+
+/* Маленькие фотографии */
+.small-photo-row {
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.small-photo-row img {
+  
+  width: calc(50% - 10px); /* Две фотографии занимают одну строку */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease; /* Эффект увеличения */
+}
+
+.small-photo-row img:hover {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+/* Текст в три колонки */
+.text-columns {
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.text-columns .bordered {
+  background-color: #72676F;
+  flex: 1; /* Все три блока равны */
+  padding: 15px;
+  border: 2px solid #72676F;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.text-columns p {
+  margin-bottom: 10px;
+}
+
+/* Цветовая полоса */
+.separator {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.color-strip {
+  background-color: #72676F; /* Более темный цвет */
+  height: 20px;
+  margin-bottom: 15px;
+
+}
+
+/* Текст под полосой */
+.footer-text {
+  font-size: 16px;
+  color: #e0e0e0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block; /* Текст в центре строки */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .photo-and-text {
+    flex-direction: column; /* Фото и текст друг под другом */
+  }
+
+  .text-column {
+    margin-top: 20px;
+  }
+
+  .small-photo-row {
+    flex-wrap: wrap;
+  }
+
+  .small-photo-row img {
+    width: 100%; /* Маленькие фото адаптируются */
+    margin-bottom: 10px;
+  }
+
+  .text-columns {
+    flex-direction: column; /* Колонки текстов переходят в вертикальный формат */
+  }
+
+  .text-columns .bordered {
+    margin-bottom: 20px;
+  }
+}
